@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 const firebaseConfig = {
-  apiKey: VITE_API_KEY,
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "react-chat-6f52d.firebaseapp.com",
   projectId: "react-chat-6f52d",
   storageBucket: "react-chat-6f52d.appspot.com",
