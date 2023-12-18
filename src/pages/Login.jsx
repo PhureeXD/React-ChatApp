@@ -22,21 +22,26 @@ export default function Login() {
   }, [user]);
 
   return (
-    <div className="hero min-h-screen ">
+    <div className="min-h-screen hero ">
       <div className="hero-overlay bg-slate-100"></div>
-      <div className="hero-content text-center text-neutral-content">
+      <div className="text-center hero-content text-neutral-content">
         <div className="max-w-md">
           <PiChatsCircleFill size={150} className="ml-5" />
-          <h1 className="mb-6 text-5xl font-bold text-black">Chat App</h1>
+          <h1 className="mb-6 text-5xl font-bold text-black/70">Chat App</h1>
           <p className="mb-5 text-black opacity-40">
             Let&apos;s talk about something
           </p>
-          <button
-            onClick={() => handleLogin()}
-            className="btn bg-slate-600 text-white"
-          >
-            Login with Google
-          </button>
+          <div className="flex justify-center">
+            <button
+              onClick={() => handleLogin()}
+              className="flex gap-2 px-10 py-4 text-white transition-all border rounded-full hover:bg-slate-400 bg-black/80"
+            >
+              <img src="/user.svg" alt="user logo"></img>
+              <label className="cursor-pointer whitespace-nowrap text-[16px] font-[500]">
+                Login
+              </label>
+            </button>
+          </div>
         </div>
       </div>
     </div>

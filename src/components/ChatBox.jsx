@@ -23,7 +23,7 @@ export default function ChatBox() {
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const msg = [];
       querySnapshot.forEach((doc) => {
-        msg.push({ id: doc.id, ...doc.data() });
+        msg.push({ ...doc.data(), id: doc.id });
       });
       setMsgs(msg);
     });

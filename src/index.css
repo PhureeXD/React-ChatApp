@@ -5,3 +5,10 @@
 .wrapctn {
   @apply container mx-auto max-w-4xl;
 }
+.mygradient {
+  background: linear-gradient(
+    90deg,
+    rgb(10, 250, 215) 0%,
+    rgb(139, 102, 241) 55%
+  );
+}

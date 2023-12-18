@@ -11,8 +11,8 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed navbar bg-teal-50 z-10">
-      <div className="wrapctn flex justify-between">
+    <div className="fixed z-10 navbar mygradient">
+      <div className="flex justify-between wrapctn">
         <button className="btn btn-square btn-ghost">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,14 +28,16 @@ export default function Navbar() {
             ></path>
           </svg>
         </button>
-        <span className="flex-1 mx-2 font-bold text-lg">Chat App</span>
+        <span className="flex-1 mx-2 text-lg font-bold text-slate-600">
+          Chat App
+        </span>
       </div>
-      <div className="flex-1 justify-end">
+      <div className="justify-end flex-1">
         {user ? (
           <a
             href="/"
             onClick={handleLogout}
-            className="btn rounded-full text-md btn-error text-white leading-none"
+            className="leading-none text-white rounded-full btn text-md btn-error"
           >
             Logout
           </a>
