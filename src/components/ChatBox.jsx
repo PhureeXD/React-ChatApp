@@ -31,7 +31,7 @@ export default function ChatBox() {
   }, []);
 
   return (
-    <div className="pb-40 pt-20 wrapctn ">
+    <div className="pt-20 pb-40 wrapctn ">
       {msgs.map((m) => (
         <Message key={m.id} message={m} />
       ))}
